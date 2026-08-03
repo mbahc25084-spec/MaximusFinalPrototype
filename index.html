@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Polaris Decision Board — a static operating prototype for life-sciences decision throughput.">
+  <meta name="theme-color" content="#12333a">
+  <title>Polaris Decision Board</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Application navigation">
+      <a class="brand" href="#throughput" aria-label="Polaris home">POLARIS<span>Decision Board · Day 210</span></a>
+      <nav id="nav" class="nav"></nav>
+      <p class="sidebar-note">Illustrative operating simulation<br><strong>All client names are fictional</strong></p>
+    </aside>
+    <main id="main" class="main">
+      <header class="topbar">
+        <div><p class="eyebrow">Apex Life Sciences Consulting</p><h1 id="page-title">Decision Throughput</h1></div>
+        <div class="top-actions">
+          <label class="role-label">Role <select id="role"><option>Polaris Owner</option><option>Account Partner</option><option>Realisation Lead</option><option>Finance Verifier</option></select></label>
+          <button id="lineage-toggle" type="button">Lineage: Off</button>
+          <button id="print" type="button">Export pre-read</button>
+          <button id="reset" type="button">Reset session</button>
+        </div>
+      </header>
+      <div id="view" aria-live="polite"></div>
+    </main>
+  </div>
+  <div id="modal" class="modal" hidden></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <footer>Illustrative fictional clients only · Static GitHub Pages prototype · No backend or network calls</footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
